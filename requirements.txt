@@ -21,3 +21,4 @@ toml==0.10.2
 pyqt5<=5.13
 spyder==4.0.1
 helpdev==0.7.1
+pillow==7.0.0
