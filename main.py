@@ -14,10 +14,10 @@ MENU = {
 def _main():
 
     st.sidebar.title("My Dashboard")
-    st.sidebar.title("\n")
-    st.sidebar.title("\n")
-    st.sidebar.title("\n")
+    
+    st.sidebar.info("Your very own Dashboard. You can use it modified it and can make people visualise your data that you want to show.")
 
+    st.sidebar.title("\n")
     add_selector = st.sidebar.selectbox(
         'Dashboard Menu',
         ("Plots & Graphs", "Data Upload",)
@@ -28,6 +28,7 @@ def _main():
     with st.spinner(f"Loading {add_selector} ....."):
         render_page(menu)
 
+    st.sidebar.text(u'© AnubhavSharma')
 
 if __name__ == '__main__' :
     
