@@ -11,3 +11,7 @@ def title_awesome(body: str):
         # "d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)]"
         # "(https://github.com/Avkash/mldl)"
     )
+
+def onClick(btnName):
+    btn = st.button(btnName)
+    return btn
